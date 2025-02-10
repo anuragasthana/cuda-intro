@@ -1,0 +1,21 @@
+{
+  "actionButtons": {
+    "defaultColor": "white",
+    "commands": [
+      {
+        "cwd": "/home/coder/project",
+        "name": "Build Submission (Step 1)",
+        "color": "white",
+        "singleInstance": true,
+        "command": "sh run.sh 1 $(cat .user) > results.txt"
+      },
+      {
+        "cwd": "/home/coder/.local/share/code-server/User/coursera/",
+        "name": "Submit Assignment (Step 2)",
+        "color": "white",
+        "singleInstance": true,
+        "command": "python3 submit.py code-dev-lifecycle-1"
+      }
+    ]
+  }
+}
